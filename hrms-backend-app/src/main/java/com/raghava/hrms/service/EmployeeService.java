@@ -16,7 +16,7 @@ public interface EmployeeService {
 	
 	Iterable<Employee> getAllEmployees();
 	
-	Optional<Employee> getEmployeeWithId(Long empId);
+	Employee getEmployeeWithId(Long empId);
 
 	Employee updateEmployeeWithId(Long empId, Employee newEmp);
 	

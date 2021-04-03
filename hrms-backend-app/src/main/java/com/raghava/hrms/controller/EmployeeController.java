@@ -42,13 +42,13 @@ public class EmployeeController {
 	}
 
 	@GetMapping("/employees")
-	private Iterable<Employee> getAllEmployees() {
+	public Iterable<Employee> getAllEmployees() {
 		return empService.getAllEmployees();
 	}
 
 	@GetMapping("/employees/{id}")
 	public Employee getEmployeeWithId(@PathVariable long empId) {
-		return empService.getEmployeeWithId(empId).get();
+		return empService.getEmployeeWithId(empId);
 	}
 
 	// Edit/Update a Employee

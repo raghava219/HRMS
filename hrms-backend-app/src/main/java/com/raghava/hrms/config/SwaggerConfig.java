@@ -1,4 +1,4 @@
-package com.raghava.hrms;
+package com.raghava.hrms.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

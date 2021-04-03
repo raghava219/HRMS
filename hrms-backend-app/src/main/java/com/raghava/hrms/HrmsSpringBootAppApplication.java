@@ -37,7 +37,7 @@ public class HrmsSpringBootAppApplication implements CommandLineRunner {
 		emp2.setJoiningDate(LocalDate.of(2019, 10,5));
 		emp2.setEmployeeGender('F');
 		emp2.setDateOfBirth(LocalDate.of(1984, 10,5));
-		emp2.setEmailId("test3@gmail.com");
+		emp2.setEmailId("test2@gmail.com");
 		empService.saveEmployee(emp2);
 		
 	}
