@@ -66,8 +66,7 @@ public class EmployeeController {
 
 		Employee createdEmp = empService.saveEmployee(emp);
 
-		// Get current resource url
-		/// {id}
+
 		URI uri = ServletUriComponentsBuilder.fromCurrentRequest().path("/{id}")
 				.buildAndExpand(createdEmp.getEmployeeId()).toUri();
 
